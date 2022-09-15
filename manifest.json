@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+
+  "name": "Terminality",
+  "version": "1",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": [],
+  "app": {
+    "background": {
+      "scripts": ["back.js"]
+    }
+  },
+  "minimum_chrome_version": "28"
+}
