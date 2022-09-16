@@ -14,8 +14,8 @@ function ReturnFile(filename){
         .then((data) => data.text())
         .then(data => Print(data));
 }
-function ListFiles(){
-    fetch("UAF/main.tree")
+function ListFiles(dir){
+    fetch("UAF/" + "/" +"main.tree")
         .then((data) => data.text())
         .then(data => Print(data));
 }

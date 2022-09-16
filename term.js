@@ -4,7 +4,10 @@ window.addEventListener("DOMContentLoaded", (event) =>{
     boot();
     console.log("Dom")
     var CmdBox = document.getElementById("cmd");
-
+    CmdBox.addEventListener("focusout", (fevent) => {
+        CmdBox.focus();
+        
+    });
     var NT = document.createElement("p");
     NT.innerHTML = "Sci1132@231.231.321.312: ▋";
     var Divs = document.getElementById("terms");
