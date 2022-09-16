@@ -24,36 +24,3 @@ window.addEventListener("DOMContentLoaded", (event) =>{
     });
 });
 
-function CMD(CMD){
-    var TXT = CMD.toLowerCase();
-
-    switch(TXT){
-        case "help":
-            Print(TXT+": Showing Help page, ");
-            Print("whoami - Shows who you are and what you are connected to");
-            Print("help - Shows this page.");
-            Print("exit - Returns to default os.");
-            Print("ls - Shows avaliable files to open with filename");
-            
-        break;
-        case "whoami":
-           Print("`Sci1132` Connect to `SemiPub` @ 231.231.321.312");
-        break;
-        case "ls":
-            Print("BreachLog.txt");
-        break;
-        case "breachlog.txt":
-            BreachLog1Read();
-        break;
-        case "":
-            Print();
-        break;
-        case "exit":
-            close();
-        break;
-        default:
-            Print(TXT+ ": Unknown Command");
-        break;
-        
-    }
-}
